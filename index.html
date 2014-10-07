@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="TTTracker">
+<head>
+  <meta charset="utf-8">
+  <title>TTTracker</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="TitlesCtrl">
+	Titles:
+	<ul>
+		<li ng-repeat="title in titles">
+			<span>{{title.name}}</span>
+		</li>
+	</ul>
+</body>
+</html>
